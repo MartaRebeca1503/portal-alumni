@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High Agency — Portal Alumni PdA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>High Agency</h1>
+            <p>Bias to Action, Clear Thinking e mentalidade de dono para alavancar sua carreira.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="filters" id="filters">
+            <div class="filter-group">
+                <span class="filter-label">Formato:</span>
+                <div class="filter-options" id="filter-formato">
+                    <button class="btn-filter active" data-value="todos">Todos</button>
+                    <button class="btn-filter" data-value="video">🎥 Vídeo</button>
+                    <button class="btn-filter" data-value="pdf">📄 PDF</button>
+                    <button class="btn-filter" data-value="artigo">📰 Artigo</button>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <span class="filter-label">Momento:</span>
+                <div class="filter-options" id="filter-momento">
+                    <button class="btn-filter active" data-value="todos">Todos</button>
+                    <button class="btn-filter" data-value="buscando-vaga">Buscando 1ª vaga</button>
+                    <button class="btn-filter" data-value="preparando-entrevista">Preparando entrevista</button>
+                    <button class="btn-filter" data-value="crescendo-emprego">Crescendo no emprego</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="loading" class="state-message">Carregando materiais...</div>
+        <div id="error" class="state-message hidden">Não foi possível carregar os materiais agora. Tente novamente em alguns minutos.</div>
+        <div id="empty" class="state-message hidden">Nenhum material encontrado. Tente outro filtro.</div>
+
+        <div class="materials-grid" id="materials-grid"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Portal Alumni PdA</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
