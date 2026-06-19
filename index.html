@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Alumni PdA — Trilhas de Conteúdo</title>
+    <style>
+        :root {
+            --roxo: #2D1B4E;
+            --amarelo: #FFD700;
+            --fundo: #FFFFFF;
+            --bege-claro: #F9F7F2;
+            --texto: #333333;
+            --branco: #FFFFFF;
+            --cinza-claro: #E0E0E0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--fundo);
+            color: var(--texto);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Centralizado */
+        .header {
+            background-color: var(--roxo);
+            color: var(--branco);
+            padding: 60px 0;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Grid de Trilhas */
+        .trilhas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 60px;
+        }
+
+        .trilha-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--branco);
+            border: 2px solid var(--roxo);
+            border-radius: 16px;
+            text-decoration: none;
+            color: var(--roxo);
+            transition: all 0.3s ease;
+        }
+
+        .trilha-card:hover {
+            background-color: var(--roxo);
+            color: var(--amarelo);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(45, 27, 78, 0.2);
+        }
+
+        .trilha-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .trilha-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: auto;
+            padding: 30px 0;
+            text-align: center;
+            border-top: 1px solid var(--cinza-claro);
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .header h1 { font-size: 1.8rem; }
+            .trilhas-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Trilhas de Conteúdo</h1>
+            <p>Escolha uma categoria para acessar materiais exclusivos e acelerar seu desenvolvimento.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="trilhas-grid">
+            <a href="trilha-guias-rapidos/index.html" class="trilha-card">
+                <div class="trilha-icon">🚀</div>
+                <div class="trilha-name">Guias Rápidos</div>
+            </a>
+
+            <a href="trilha-high-agency/index.html" class="trilha-card">
+                <div class="trilha-icon">🧠</div>
+                <div class="trilha-name">High Agency</div>
+            </a>
+
+            <a href="trilha-soft-skills/index.html" class="trilha-card">
+                <div class="trilha-icon">🤝</div>
+                <div class="trilha-name">Soft Skills</div>
+            </a>
+
+            <a href="trilha-hard-skills/index.html" class="trilha-card">
+                <div class="trilha-icon">💻</div>
+                <div class="trilha-name">Hard Skills</div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Portal Alumni PdA • Feito por Alumni para Alumni</p>
+        </div>
+    </footer>
+</body>
+</html>
