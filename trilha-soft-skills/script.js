@@ -1,5 +1,5 @@
 const SHEET_ID = '1Dsn4Y8q5O8guBT0Z3RSixOxatMkfrR5yMYLIE0TvfEs';
-const GID = 'SUBSTITUIR_PELO_GID_DA_ABA_SOFT_SKILLS'; // Ex: '987654321'
+const GID = '0'; // Ex: '987654321'
 const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${GID}`;
 
 let allMaterials = [];
