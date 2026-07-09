@@ -39,7 +39,7 @@ portal-alumni/
 ## 📊 Como atualizar os materiais
 
 Não é necessário editar o código para adicionar novos materiais:
-1. Abra a [Planilha Mestra](https://docs.google.com/spreadsheets/d/1Dsn4Y8q5O8guBT0Z3RSixOxatMkfrR5yMYLIE0TvfEs/).
+1. Abra a [Planilha Mestra]().
 2. Adicione uma nova linha na aba da trilha correspondente.
 3. Garanta que as colunas `titulo`, `formato`, `momento` e `link` estejam preenchidas.
 4. A página atualizará automaticamente no próximo carregamento.
