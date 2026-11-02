@@ -100,17 +100,17 @@ function createCard(m) {
 
 // Filtros
 document.getElementById('filter-formato').addEventListener('click', (e) => {
-    if (e.target.classList.contains('btn-filter')) {
-        updateActiveBtn('filter-formato', e.target);
-        filtroFormato = e.target.dataset.value;
+    if (/** @type {HTMLElement} */ (e.target).classList.contains('btn-filter')) {
+        updateActiveBtn('filter-formato', /** @type {HTMLElement} */ (e.target));
+        filtroFormato = /** @type {HTMLElement} */ (e.target).dataset.value;
         render();
     }
 });
 
 document.getElementById('filter-momento').addEventListener('click', (e) => {
-    if (e.target.classList.contains('btn-filter')) {
-        updateActiveBtn('filter-momento', e.target);
-        filtroMomento = e.target.dataset.value;
+    if (/** @type {HTMLElement} */ (e.target).classList.contains('btn-filter')) {
+        updateActiveBtn('filter-momento', /** @type {HTMLElement} */ (e.target));
+        filtroMomento = /** @type {HTMLElement} */ (e.target).dataset.value;
         render();
     }
 });
