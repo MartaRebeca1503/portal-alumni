@@ -192,3 +192,23 @@ body {
         align-items: flex-start;
     }
 }
+
+.spinner {
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: 10px;
+    vertical-align: -0.2em;
+    border: 3px solid var(--cinza-claro);
+    border-top-color: var(--roxo);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .spinner { animation-duration: 2.4s; }
+}
